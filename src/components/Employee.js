@@ -10,7 +10,7 @@ return(
         (<p>No role</p>)
         }
     </p> } */}
-    <p>{props.role ?props.role:'No role'}</p>
+    <p class="bg-gray-500">{props.role ?props.role:'No role'}</p>
 </>
 )
 }
