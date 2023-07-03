@@ -7,8 +7,9 @@ function App() {
   // console.log("Lets show the employee")
   let showEmp=true;
   // let role="dev"
+  con
   return (
-    <div className="App bg-blue-300">
+    <div className="App">
        
       { showEmp ? (
 
@@ -18,10 +19,17 @@ function App() {
         // role=e.target.value;
         setrole(e.target.value)
       }}/>
-     
-      <Employee name="Arjun" role="Developer" />
-      <Employee name="Rishi" role={role}  />
+     <div className='flex flex-wrap'>
+      <Employee name="Arjun" role="Developer" img="https://akns-images.eonline.com/eol_images/Entire_Site/2019414/rs_600x600-190514063109-600-George-Clooney-Batman-LT-051419-GettyImages-607408286.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top"/>
+      <Employee name="Rishi" role={role} img="https://akns-images.eonline.com/eol_images/Entire_Site/2019414/rs_600x600-190514063109-600-George-Clooney-Batman-LT-051419-GettyImages-607408286.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
       <Employee/>
+      <Employee name="Arjun" role="Developer" img="https://akns-images.eonline.com/eol_images/Entire_Site/2019414/rs_600x600-190514063109-600-George-Clooney-Batman-LT-051419-GettyImages-607408286.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top"/>
+      <Employee name="Rishi" role={role} img="https://akns-images.eonline.com/eol_images/Entire_Site/2019414/rs_600x600-190514063109-600-George-Clooney-Batman-LT-051419-GettyImages-607408286.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
+      <Employee/>
+      <Employee name="Arjun" role="Developer" img="https://akns-images.eonline.com/eol_images/Entire_Site/2019414/rs_600x600-190514063109-600-George-Clooney-Batman-LT-051419-GettyImages-607408286.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top"/>
+      <Employee name="Rishi" role={role} img="https://akns-images.eonline.com/eol_images/Entire_Site/2019414/rs_600x600-190514063109-600-George-Clooney-Batman-LT-051419-GettyImages-607408286.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
+      <Employee/>
+      </div>
 </>
       ):(
         <p>You cannot see the emps</p>
